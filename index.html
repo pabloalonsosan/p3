@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Banderas</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌍 Juego de Banderas</h1>
+        <p>¿Puedes adivinar la bandera correcta?</p>
+    </header>
+
+    <!-- Sección del Juego -->
+    <main>
+        <div class="score-board">
+            <p>Puntuación: <span id="score">0</span></p>
+            <p>Intentos restantes: <span id="attempts">5</span></p>
+            <p>Récord: <span id="high-score">0</span></p>
+        </div>
+        
+        <div class="game-container">
+            <h2 id="country-name">¿De qué país es esta bandera?</h2>
+            <div class="flags-container" id="flags-container"></div>
+        </div>
+
+        <button id="reset-button" class="hidden">Reiniciar Juego</button>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
