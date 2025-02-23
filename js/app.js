@@ -37,7 +37,7 @@ const resetGame = () => {
 // 🚩 Obtener banderas de la API
 const fetchFlags = async () => {
     try {
-        const response = await fetch('https://restcountries.com/#api-endpoints-v3-name');
+        const response = await fetch('https://restcountries.com/v3.1/all');
         countries = await response.json();
         loadNewQuestion();
     } catch (error) {
